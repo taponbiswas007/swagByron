@@ -10,11 +10,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&family=Maven+Pro:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
 
     <!-- bootstrap cdn -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <!-- Latest Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -26,104 +26,34 @@
 <body>
 
     <!--======================== Preloader start==================-->
-    <div id="preloader">
+    <div id="preloader" class="d-none">
         <div class="loader">
-            <!-- Road -->
-            <div class="road"></div>
 
-            <!-- Running Man SVG -->
-            <svg id="runner" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-                <circle cx="50" cy="20" r="8" fill="#053B5B" />
-                <rect x="47" y="28" width="6" height="20" fill="#FF5758" />
-                <!-- Arms -->
-                <line x1="50" y1="35" x2="35" y2="45" stroke="#053B5B" stroke-width="4">
-                    <animate attributeName="x2" values="35;65;35" dur="1s" repeatCount="indefinite" />
-                </line>
-                <line x1="50" y1="35" x2="65" y2="45" stroke="#053B5B" stroke-width="4">
-                    <animate attributeName="x2" values="65;35;65" dur="1s" repeatCount="indefinite" />
-                </line>
-                <!-- Legs -->
-                <line x1="50" y1="48" x2="35" y2="70" stroke="#053B5B" stroke-width="4">
-                    <animate attributeName="x2" values="35;65;35" dur="1s" repeatCount="indefinite" />
-                </line>
-                <line x1="50" y1="48" x2="65" y2="70" stroke="#053B5B" stroke-width="4">
-                    <animate attributeName="x2" values="65;35;65" dur="1s" repeatCount="indefinite" />
-                </line>
-            </svg>
-
-            <!-- Text -->
-            <div class="loading-text">On Track Sports — Loading…</div>
         </div>
     </div>
     <!--======================== Preloader end==================-->
 
 
-    <!-- top bar start -->
-    <section class="topbar py-3">
-        <div class="container-fluid">
-            <div class=" d-flex justify-content-sm-between justify-content-center align-items-center flex-wrap gap-3">
-                <ul class="social_link_list">
-                    <li>
-                        <a href="#" class="social_link">
-                            <i class="fa-brands fa-square-instagram"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="social_link">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a>
-                    </li>
-                </ul>
-                <ul class="contact_list">
-                    <li>
-                        <a href="tel:  281-246-0103" class="contact_link">
-                            <i class="fa-solid fa-phone"></i>
-                            <span> 281-246-0103</span>
-                        </a>
-                    </li>
-                    <li class="separator">
-                        |
-                    </li>
-                    <li>
-                        <a href="mailto:admin@ontrackphysicaltherapy.com" class="contact_link">
-                            <i class="fa-solid fa-envelope"></i>
-                            <span> admin@ontrackphysicaltherapy.com</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <!-- top bar end -->
-
     <!-- =========navigation area start========= -->
-    <header class="py-3">
-        <div class="position-relative">
-            <div class="container-fluid">
+    <header class="">
+        <div class="position-relative py-2">
+            <div class="container">
                 <div class="d-flex justify-content-between align-items-center gap-3">
                     <div class="logo_area">
                         <a href="index.html" class="logo">
-                            <img src="assets/images/onTracklogo.png" alt="OnTrack">
-                            <ul>
-                                <li>
-                                    OnTrack Physical Therapy & wellness
-                                </li>
-                                <li>
-                                    where you get back on track
-                                </li>
-                            </ul>
+                            <img src="assets/images/logo.png" alt="SWAG BYRON">
                         </a>
                     </div>
                     <div class="navigation_area">
                         <nav>
-                            <a href="index.html" class="nav_link active">home</a>
-                            <a href="aboutUs.html" class="nav_link">About Us</a>
-                            <a href="services.html" class="nav_link">Services</a>
-                            <a href="insurance.html" class="nav_link d-xxl-block d-lg-none d-block">Insurance</a>
-                            <a href="testimonials.html" class="nav_link d-xxl-block d-lg-none d-block">Testimonials</a>
-                            <a href="fAQ.html" class="nav_link d-xxl-block d-lg-none d-block">FAQ</a>
-                            <a href="contactUs.html" class="nav_link d-xxl-block d-lg-none d-block">Contact Us</a>
-                            <div class="d-xxl-none d-lg-block d-none position-relative moreItemactive">
+                            <a href="index.html" class="nav_link active">Home</a>
+                            <a href="#" class="nav_link">About</a>
+                            <a href="#" class="nav_link">Suppliers</a>
+                            <a href="#" class="nav_link d-xl-block d-lg-none d-block">Blog</a>
+                            <a href="#" class="nav_link d-xl-block d-lg-none d-block">Showcase</a>
+                            <a href="#" class="nav_link d-xl-block d-lg-none d-block">Case Studies</a>
+                            <a href="#" class="nav_link d-xl-block d-lg-none d-block">References</a>
+                            <div class="d-xl-none d-lg-block d-none position-relative moreItemactive">
                                 <button class="nav_link ">
                                     <div class="d-flex justify-content-center align-items-center">
                                         <span>More</span>
@@ -133,28 +63,28 @@
                                 </button>
                                 <ul class="moreNavitemlist position-absolute top-100 bg-white rounded-3 shadow p-4">
                                     <li class="mb-4">
-                                        <a href="insurance.html" class="nav_link">Insurance</a>
+                                        <a href="#" class="nav_link">Blog</a>
                                     </li>
                                     <li class="mb-4">
-                                        <a href="testimonials.html" class="nav_link">Testimonials</a>
+                                        <a href="#" class="nav_link">Showcase</a>
                                     </li>
                                     <li class="mb-4">
-                                        <a href="fAQ.html" class="nav_link">FAQ</a>
+                                        <a href="#" class="nav_link">Case Studies</a>
                                     </li>
                                     <li>
-                                        <a href="contactUs.html" class="nav_link">Contact Us</a>
+                                        <a href="#" class="nav_link">References</a>
                                     </li>
                                 </ul>
                             </div>
                         </nav>
                         <hr class="d-md-none d-block">
-                        <a href="contactUs.html" class="btn d-md-none d-block requestanAppointment">
-                            Request an Appointment
+                        <a href="#" class="btn d-md-none d-block commonBtn px-lg-4">
+                            Sign Up
                         </a>
                     </div>
                     <div class="d-flex justify-content-end align-items-center gap-4">
-                        <a href="contactUs.html" class="btn btn-primary requestanAppointment d-md-block d-none">
-                            Request an Appointment
+                        <a href="#" class="btn btn-primary commonBtn px-lg-4 d-md-block d-none">
+                            Sign Up
                         </a>
                         <button class="menutogglebtn d-lg-none">
                             <span></span>
@@ -171,313 +101,23 @@
 
     <!-- ================hero section area start================ -->
     <section class="heroSection">
-        <div class="container-fluid">
-            <div class="hero_main_area px-xxl-4">
-                <h1 class="text-md-start text-center">
-                    Tailored Physical Therapy for Your Unique Wellness Journey
-                </h1>
-                <div class="d-flex justify-content-md-start justify-content-center align-items-center gap-3 flex-wrap">
-                    <a href="contactUs.html" class="btn btn-primary requestanAppointment">
-                        Request an Appointment
-                    </a>
-                    <a href="contactUs.html" class="btn btn-outline-primary explore_service">
-                        Explore Services
-                    </a>
+        <div class="container">
+            <div class="hero_main_area">
+               <div class="d-flex justify-content-between align-items-stretch">
+                <div class="content_area">
+                    <h1>swag</h1>
+                    <h2>by ron</h2>
+                    <p>
+                        Elevating your brand with custom products
+                    </p>
                 </div>
+               </div>
             </div>
         </div>
     </section>
     <!-- ================hero section area end================ -->
 
 
-    <!-- ==================Why Choose us start================== -->
-    <section class="whychooseUs_area py-lg-5 py-4 bg-white">
-        <div class="container-fluid">
-            <div class="px-xxl-4">
-                <div class="row g-3">
-                    <div class="col-xl-3 col-lg-4">
-                        <div class="d-flex h-100 justify-content-lg-start justify-content-center  align-items-center">
-                            <div class="doctor_avatar_image flex-shrink-0">
-                                <img src="assets/images/healthicons_doctor-male.png" alt="Why Choose us?">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-9 col-lg-8">
-                        <h1>
-                            Why Choose us?
-                        </h1>
-                        <p>
-                            At OnTrack Physical Therapy & Wellness, Our highest priority is the well-being and progress
-                            of
-                            every patient.
-                            The care you receive here is tailored specifically for you, with therapists who truly
-                            focus on your individual goals.
-                            <br> <br>
-                            Let OnTrack Physical Therapy & Wellness be the first to effectively identify the source of
-                            your
-                            discomfort and provide hands-on treatment that brings remarkable relief. It’s not uncommon
-                            for
-                            patients who see Dr. Jahnvi to wonder, “Why hasn’t anyone told me about this before?”
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ==================Why Choose us end================== -->
-
-
-    <!-- ==================Our Philosophy area start=================== -->
-    <section class="our_Philosophy_area py-lg-5 py-4">
-        <div class="container-fluid">
-            <div class="px-xxl-4">
-                <div class="row g-lg-5 g-3">
-                    <div class="col-xl-9 col-lg-8">
-                        <h1>
-                            Our Philosophy
-                        </h1>
-                        <p>
-                            At OnTrack Physical Therapy & Wellness, Our highest priority is the well-being and progress
-                            of
-                            every patient.
-                            The care you receive here is tailored specifically for you, with therapists who truly
-                            focus on your individual goals.
-                            <br> <br>
-                            Let OnTrack Physical Therapy & Wellness be the first to effectively identify the source of
-                            your
-                            discomfort and provide hands-on treatment that brings remarkable relief. It’s not uncommon
-                            for
-                            patients who see Dr. Jahnvi to wonder, “Why hasn’t anyone told me about this before?”
-                        </p>
-                    </div>
-                    <div class="col-xl-3 col-lg-4">
-                        <div class="d-flex h-100 justify-content-lg-start justify-content-center  align-items-center">
-                            <div class="heart_avatar_image flex-shrink-0">
-                                <img src="assets/images/heart.png" alt="Our Philosophy">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ==================Our Philosophy area end=================== -->
-
-
-    <!-- ==================Your 3-Step Journey to Recovery start================= -->
-    <section class="your_Journey_to_Recovery py-lg-5 py-4 bg-white">
-        <div class="container-fluid">
-            <div class="px-xxl-4">
-                <h1 class="mb-3">
-                    Your 3-Step Journey to Recovery
-                </h1>
-                <div class="row g-3 mt-3">
-                    <div class="col-xl-4 col-md-6 col-12">
-                        <div class="card shadow-sm">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <div class="card_icon_box">
-                                        <img src="assets/images/maki_doctor.svg" alt="Icon">
-                                    </div>
-                                </div>
-                                <h2>
-                                    Step 1: Evaluation
-                                </h2>
-                                <p>
-                                    Your journey with On
-                                    Track
-                                    Physical therapy & Wellness begins..
-                                </p>
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <a href="#" class="read_more_btn">Read More <i
-                                            class="fa-solid fa-arrow-right ms-2"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-6 col-12">
-                        <div class="card shadow-sm">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <div class="card_icon_box">
-                                        <img src="assets/images/maki_doctor.svg" alt="Icon">
-                                    </div>
-                                </div>
-                                <h2>
-                                    Step 2: Personalized Treatment
-                                </h2>
-                                <p>
-                                    we design a
-                                    personalized
-                                    treatment plan using an evidence based..
-                                </p>
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <a href="#" class="read_more_btn">Read More <i
-                                            class="fa-solid fa-arrow-right ms-2"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-6 col-12">
-                        <div class="card shadow-sm">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <div class="card_icon_box">
-                                        <img src="assets/images/maki_doctor.svg" alt="Icon">
-                                    </div>
-                                </div>
-                                <h2>
-                                    Step 3: Return to Activities
-                                </h2>
-                                <p>
-                                    Return to your goals, activities and hobbies without symptoms..
-                                </p>
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <a href="#" class="read_more_btn">Read More <i
-                                            class="fa-solid fa-arrow-right ms-2"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ==================Your 3-Step Journey to Recovery end================= -->
-
-
-    <!-- ===================footer area start======================= -->
-    <footer class="footer_area py-lg-5 py-4">
-        <div class="container-fluid">
-            <div class="px-xxl-4">
-                <h1>
-                    Contact Us
-                </h1>
-                <div class="row g-lg-5 g-3">
-                    <div class="col-lg-6 col-md-6">
-                        <div class="footerlogo_area">
-                            <div class="logo_area">
-                                <a href="index.html" class="logo">
-                                    <img src="assets/images/onTracklogo.png" alt="OnTrack">
-                                    <ul>
-                                        <li>
-                                            OnTrack Physical Therapy & wellness
-                                        </li>
-                                        <li>
-                                            where you get back on track
-                                        </li>
-                                    </ul>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="map_area">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.479750957938!2d-95.70116252382749!3d29.96563962229911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640d5c7e3c9518b%3A0x1479864bba539faf!2s17820%20Mound%20Rd%2C%20Cypress%2C%20TX%2077433%2C%20USA!5e0!3m2!1sen!2sbd!4v1755794570881!5m2!1sen!2sbd"
-                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                        <div class="address_area">
-                            <div class="row g-4">
-                                <div class="col-xl-7  col-md-12 col-sm-7">
-                                    <ul class="addressList">
-                                        <li>
-                                            17820 Mound Rd. , Suite: E, Cypress, TX 77433
-                                        </li>
-                                        <li>
-                                            <div class="d-flex justify-content-start align-items-center gap-3">
-                                                <span>
-                                                    <b>PH :</b> 281-246-0103
-                                                </span>
-                                                <span>
-                                                    <b>Fax :</b> 281-246-1026
-                                                </span>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <b>Email:</b> admin@ontrackphysicaltherapy.com
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-xl-5  col-md-12 col-sm-5">
-                                    <ul class="addressList">
-                                        <li>
-                                            <b>Mon:</b> 9 to 4
-                                        </li>
-                                        <li>
-                                            <b>Wed:</b> 8 to 6
-                                        </li>
-                                        <li>
-                                            <b>Fri:</b> 1 to 6
-                                        </li>
-                                        <li>
-                                            <b>Sat:</b> With appointments only
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <hr class="d-md-none d-block bg-white">
-                        <form action="" class="contact_form">
-                            <div class="row g-4">
-                                <div class="col-xl-6 col-md-12 col-sm-6">
-                                    <label for="">Full Name</label>
-                                    <input type="text" placeholder="Your First Name">
-                                </div>
-                                <div class="col-xl-6 col-md-12 col-sm-6">
-                                    <label for="">Last Name</label>
-                                    <input type="text" placeholder="Your Last Name">
-                                </div>
-                                <div class="col-xl-6 col-md-12 col-sm-6">
-                                    <label for="">Your Email</label>
-                                    <input type="text" placeholder="Your Email">
-                                </div>
-                                <div class="col-xl-6 col-md-12 col-sm-6">
-                                    <label for="">contact number</label>
-                                    <input type="text" placeholder="Your Contact Number">
-                                </div>
-                                <div class="col-xl-12">
-                                    <label for="">subject</label>
-                                    <input type="text" placeholder="subject">
-                                </div>
-                                <div class="col-xl-12">
-                                    <label for="">message</label>
-                                    <textarea name="" id="" placeholder="Your message"></textarea>
-                                </div>
-                                <div class="col-xl-12">
-                                    <button class="btn submitBtn btn-primary">
-                                        Send Message
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <div class="copywriteArea">
-        <ul class="footernavlink_list">
-            <li>
-                <a href="privacyPolicy.html">Privacy Policy</a>
-            </li>
-            <li>
-                |
-            </li>
-            <li>
-                <a href="termsandUse.html">Terms and Use</a>
-            </li>
-            <li>
-                |
-            </li>
-            <li>
-                <a href="services.html">Services</a>
-            </li>
-        </ul>
-        <p class="copywriteText">Copyright 2025 @ OnTrack Physical Therapy & Wellness. All rights reserved</p>
-    </div>
-    <!-- ===================footer area end======================= -->
 
 
     <!-- ============back to top start=========== -->
@@ -499,13 +139,13 @@
     <script src="assets/js/main.js"></script>
 
     <!-- preloader -->
-    <script>
+    <!-- <script>
         window.addEventListener("load", function () {
             setTimeout(() => {
                 document.getElementById("preloader").style.display = "none";
             }, 1000);
         });
-    </script>
+    </script> -->
 </body>
 
 </html>
