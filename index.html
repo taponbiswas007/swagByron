@@ -19,6 +19,9 @@
     <!-- Latest Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <!-- custom css -->
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
@@ -78,12 +81,12 @@
                             </div>
                         </nav>
                         <hr class="d-md-none d-block">
-                        <a href="#" class="btn d-md-none d-block commonBtn px-lg-4">
+                        <a href="#" class="btn d-md-none d-block commonBtn rounded-4 px-lg-4">
                             Sign Up
                         </a>
                     </div>
                     <div class="d-flex justify-content-end align-items-center gap-4">
-                        <a href="#" class="btn btn-primary commonBtn px-lg-4 d-md-block d-none">
+                        <a href="#" class="btn btn-primary commonBtn rounded-4 px-lg-4 d-md-block d-none">
                             Sign Up
                         </a>
                         <button class="menutogglebtn d-lg-none">
@@ -103,21 +106,124 @@
     <section class="heroSection">
         <div class="container">
             <div class="hero_main_area">
-               <div class="d-flex justify-content-between align-items-stretch">
-                <div class="content_area">
-                    <h1>swag</h1>
-                    <h2>by ron</h2>
-                    <p>
-                        Elevating your brand with custom products
-                    </p>
+                <div class="d-flex justify-content-between flex-lg-row flex-column  align-items-stretch">
+                    <div class="content_area">
+                        <h1>swag</h1>
+                        <h2>by ron</h2>
+                        <p class="mt-5">
+                            Elevating your brand with custom products
+                        </p>
+                        <div class="d-flex justify-content-center mt-5 pb-3 align-items-center">
+                            <button class="btn commonBtn rounded-3 py-3">
+                                Explore the Showcase
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hero_ownerimage pt-5">
+                        <img class="h-100" src="assets/images/ownerimage.png" alt="">
+                    </div>
                 </div>
-               </div>
             </div>
         </div>
     </section>
     <!-- ================hero section area end================ -->
 
 
+    <!-- =====================Product showcase start==================== -->
+    <section class="product_showcase_area pt-3 pb-4">
+        <div class="container-fluid">
+            <h1>Product showcase</h1>
+            <p>Explore our curated selection of custom products designed to make your brand stand out.</p>
+        </div>
+        <div class="pt-5 w-100">
+            <div class="productshowcase_cart_slider">
+                <div class="swiper productShowcase">
+                    <div class="swiper-wrapper pb-4">
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <img src="assets/images/cart_images/lego.png" class="img-fluid mb-3">
+                                    <h2>Blocks (Like LEGO)</h2>
+                                    <h3>Branded building blocks for fun, interactive engagement.</h3>
+                                    <button class="btn commonBtn rounded-3 py-3 mt-3">View Blocks</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <img src="assets/images/cart_images/lego.png" class="img-fluid mb-3">
+                                    <h2>Blocks (Like LEGO)</h2>
+                                    <h3>Branded building blocks for fun, interactive engagement.</h3>
+                                    <button class="btn commonBtn rounded-3 py-3 mt-3">View Blocks</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <img src="assets/images/cart_images/lego.png" class="img-fluid mb-3">
+                                    <h2>Blocks (Like LEGO)</h2>
+                                    <h3>Branded building blocks for fun, interactive engagement.</h3>
+                                    <button class="btn commonBtn rounded-3 py-3 mt-3">View Blocks</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <img src="assets/images/cart_images/lego.png" class="img-fluid mb-3">
+                                    <h2>Blocks (Like LEGO)</h2>
+                                    <h3>Branded building blocks for fun, interactive engagement.</h3>
+                                    <button class="btn commonBtn rounded-3 py-3 mt-3">View Blocks</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <img src="assets/images/cart_images/lego.png" class="img-fluid mb-3">
+                                    <h2>Blocks (Like LEGO)</h2>
+                                    <h3>Branded building blocks for fun, interactive engagement.</h3>
+                                    <button class="btn commonBtn rounded-3 py-3 mt-3">View Blocks</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- repeat more swiper-slide ... -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+    </section>
+    <!-- =====================Product showcase end==================== -->
+
+
+    <div class="scroll-container">
+	<div id="InfiniteScrollWrapper" class="infinite-scroll-wrapper">
+		<div id="InfiniteScroll" class="infinite-scroll-content">
+			<div class="infinite-scroll-items">
+				<div class="item-wrap">
+					<img src="https://i.pinimg.com/736x/62/95/68/629568699f7d80b6e53d31277a150f85.jpg" />
+					<span class="text">SYNK : Parallel Line</span>
+				</div>
+				<div class="item-wrap">
+					<img src="https://i.pinimg.com/736x/6f/1f/43/6f1f439f6bf10c97dfd9450be2ca1f0a.jpg" />
+					<span class="text">MAMA 2024</span>
+				</div>
+				<div class="item-wrap">
+					<img src="https://i.pinimg.com/736x/f6/ca/4e/f6ca4e472a169c12eef87d0be64a6673.jpg" />
+					<span class="text">K-Flow Concert</span>
+				</div>
+				<div class="item-wrap">
+					<img src="https://i.pinimg.com/736x/79/5b/1f/795b1ffa7ab8ffb0abb4ee0bcd7c463d.jpg" />
+					<span class="text">INGALIVE UNI-CON</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 
     <!-- ============back to top start=========== -->
@@ -134,6 +240,8 @@
     </script>
     <!-- Latest jQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- custom js -->
     <script src="assets/js/main.js"></script>
