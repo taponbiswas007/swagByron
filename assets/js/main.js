@@ -62,17 +62,17 @@ var swiper = new Swiper(".productShowcase", {
 const defaultItemCount = 7;
 const itemWidth = 238;
 
-const wrapper = document.getElementById("InfiniteScrollWrapper");
-const content = document.getElementById("InfiniteScroll");
+const wrappers = document.querySelectorAll('.infinite-scroll-wrapper');
 
-const manageChildren = (childCount) => {
+const manageChildren = (content, childCount) => {
+    const items = content.querySelectorAll('.infinite-scroll-items > .item-wrap');
     while (content.children.length > defaultItemCount) {
         content.removeChild(content.lastChild);
     }
 
     for (let i = 0; i < childCount; i++) {
         for (let j = 0; j < defaultItemCount; j++) {
-            const clone = content.children[j].cloneNode(true);
+            const clone = items[j].cloneNode(true);
             content.appendChild(clone);
         }
     }
@@ -81,15 +81,16 @@ const manageChildren = (childCount) => {
 };
 
 const core = (width) => {
-    if (width <= 1920) {
-        manageChildren(2);
-    } else if (width <= 2560) {
-        manageChildren(3);
-    } else if (width <= 3840) {
-        manageChildren(4);
-    } else {
-        manageChildren(8);
-    }
+    wrappers.forEach(wrapper => {
+        const content = wrapper.querySelector('.infinite-scroll-content');
+        let childCount = 2;
+        if (width <= 1920) childCount = 2;
+        else if (width <= 2560) childCount = 3;
+        else if (width <= 3840) childCount = 4;
+        else childCount = 8;
+
+        manageChildren(content, childCount);
+    });
 };
 
 const debounce = (func, delay) => {
@@ -100,10 +101,5 @@ const debounce = (func, delay) => {
     };
 };
 
-const handleResize = debounce(() => core(window.innerWidth), 300);
-
-window.addEventListener("load", () => {
-    core(window.innerWidth);
-});
-
-window.addEventListener("resize", handleResize);
+window.addEventListener("load", () => core(window.innerWidth));
+window.addEventListener("resize", debounce(() => core(window.innerWidth), 300));

@@ -483,13 +483,26 @@ margin: 0 auto;
 /* Product showcase end */
 
 
-
+/* short list of available brands start */
+.sortlistof_available_brands{
+    background: #ffffff;
+}
+.sortlistof_available_brands h1{
+   font-family: Bebas Neue;
+font-weight: 400;
+font-style: Regular;
+font-size: 96px;
+line-height: 100px;
+letter-spacing: 0%;
+text-align: center;
+color: #FF5000;
+text-transform: uppercase;
+margin-bottom: 20px;
+}
 .scroll-container {
-	height: 100svh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: #121212;
 }
 
 .scroll-container .infinite-scroll-wrapper {
@@ -504,20 +517,20 @@ margin: 0 auto;
 	white-space: nowrap;
 	animation: scroll 100s linear infinite;
 	width: 100%;
-	gap: 16px;
+	gap: 40px;
 }
 
 .infinite-scroll-wrapper .infinite-scroll-items {
 	display: flex;
 	flex-direction: row;
 	flex-shrink: 0;
-	gap: 16px;
+	gap: 40px;
 }
 
 .infinite-scroll-items .item-wrap {
 	position: relative;
-	min-width: 238px;
-	height: 315px;
+	width: fit-content;
+	height: fit-content;
 	flex-shrink: 0;
 	overflow: hidden;
 }
@@ -556,5 +569,16 @@ margin: 0 auto;
 		transform: translateX(-50%);
 	}
 }
-
+@media (max-width:1200px) {
+   .sortlistof_available_brands h1{
+    font-size: 55px;
+    line-height: 70px;
+   } 
+}
+@media (max-width: 576px) {
+  .sortlistof_available_brands h1 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+}
 
