@@ -188,7 +188,7 @@ header {
 
 .nav_link:hover {
 
-    color: #4b4a4a;
+    color: #ffffff;
 
 }
 
@@ -212,14 +212,15 @@ header {
     line-height: 100%;
     letter-spacing: 0%;
     background: #002D71;
+    border: 2px solid #002D71;
     color: #ffffff;
-    border: 2px solid #000000;
     transition: all 0.3s ease;
 }
 
 .commonBtn:hover {
-    background: #053B5B;
+    background: #FEC00F;
     color: #ffffff;
+    border: 2px solid #002D71;
 }
 
 .moreNavitemlist {
@@ -732,8 +733,11 @@ header {
     background: #D34200;
     border-radius: 20px;
     padding: 10px 40px;
+    transition: all 0.3s ease;
 }
-
+.bookNow_area button:hover{
+    background: #FEC00F;
+}
 @media (max-width: 1275px) {
     .bookNow_area h1 {
         font-size: 100px;
@@ -906,8 +910,11 @@ header {
     height: 38px;
     flex-shrink: 0;
     padding: 0 15px;
+    transition: all 0.3s ease;
 }
-
+.subscribeinput button:hover{
+    background: #4b4a4a;
+}
 .footer_list_items li {
     font-family: Poppins;
     font-weight: 500;
@@ -927,8 +934,12 @@ header {
     border-radius: 50%;
     color: #FEC00F;
     background: #ffffff;
+    transition: all 0.3s ease;
 }
-
+.social_link:hover{
+    background: #FEC00F;
+    color: #ffffff;
+}
 .footerlink {
     font-family: Poppins;
     font-weight: 400;
@@ -939,6 +950,16 @@ header {
     letter-spacing: 0%;
     text-transform: capitalize;
     color: #ffffff;
+    transition: all 0.3s ease;
+}
+.footerlink:hover{
+    color: #FEC00F;
+}
+li.footerlink:hover{
+    color: #ffffff;
+}
+.footerlink:hover p{
+    color: #FEC00F;
 }
 
 .underling img {
@@ -958,7 +979,7 @@ header {
     font-size: 13px;
     line-height: 13px;
     letter-spacing: 0%;
-
+    margin-top: 10px;
     color: #ffffff;
 }
 
@@ -973,10 +994,16 @@ header {
     font-weight: 400;
     text-align: center;
     padding-bottom: 28px;
-    padding-top: 44px;
+    padding-top: 68px;
     color: #ffffff;
 }
+.recentnewstitle{
+   max-width: 209px;
+  text-align: start;
+  line-height: 23px;
+  margin-top: -4px;
 
+}
 @media (max-width: 576px) {
     .subscribeinput {
         flex-wrap: wrap;
@@ -992,6 +1019,18 @@ header {
     .subscribeinput input {
         border: 2px solid #97979720 !important;
     }
+    .footer_list_items li{
+        /* text-align: center; */
+        display: flex;
+        justify-content: start;
+    }
+     .footer_list_items li:first-child{
+        justify-content: center;
+     }
+     .underling img{
+        width: 100%;
+        height: 3px;
+     }
 }
 
 @media (max-width: 376px) {
