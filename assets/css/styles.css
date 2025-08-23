@@ -73,44 +73,46 @@ p {
 }
 
 .card h2 {
- font-family: Ibarra Real Nova;
-font-weight: 700;
-font-style: Bold;
-font-size: 36px;
-line-height: 35px;
-letter-spacing: 0%;
-text-align: center;
+    font-family: Ibarra Real Nova;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 36px;
+    line-height: 35px;
+    letter-spacing: 0%;
+    text-align: center;
 
-color: #000000;
+    color: #000000;
     margin-bottom: 10px;
 }
 
 .card h3 {
-font-family: Ibarra Real Nova;
-font-weight: 400;
-font-style: Regular;
-font-size: 25px;
-line-height: 100%;
-letter-spacing: 0%;
+    font-family: Ibarra Real Nova;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 25px;
+    line-height: 100%;
+    letter-spacing: 0%;
 
     color: #000000;
     margin: 0 auto;
 }
 
 .card .commonBtn {
-   font-family: Bebas Neue;
-font-weight: 400;
-font-style: Regular;
-font-size: 32px;
-line-height: 100%;
-letter-spacing: 0%;
-text-align: center;
+    font-family: Bebas Neue;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
     margin-top: 10px;
 }
-.card .card_product_image{
+
+.card .card_product_image {
     width: 100%;
     margin: 0 auto;
 }
+
 @media (max-width:992px) {
     .card-body {
         padding: 10px;
@@ -421,32 +423,34 @@ header {
 }
 
 /* Product showcase start */
-.product_showcase_area{
-    background:#F6F2F2;
+.product_showcase_area {
+    background: #F6F2F2;
 }
-.product_showcase_area h1{
+
+.product_showcase_area h1 {
     font-family: Bebas Neue;
-font-weight: 400;
-font-style: Regular;
-font-size: 96px;
-line-height: 100%;
-letter-spacing: 0%;
-text-align: center;
-color:#002D71 ;
-text-align: center;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 96px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #002D71;
+    text-align: center;
 }
-.product_showcase_area p{
+
+.product_showcase_area p {
     font-family: Ibarra Real Nova;
-font-weight: 400;
-font-style: Regular;
-font-size: 40px;
-line-height: 100%;
-letter-spacing: 0%;
-text-align: center;
-color:#002D71CC ;
-max-width: 984px;
-width: 100%;
-margin: 0 auto;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #002D71CC;
+    max-width: 984px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .productshowcase_cart_slider {
@@ -467,7 +471,8 @@ margin: 0 auto;
  * Slider Item
  */
 .productshowcase_cart_slider {
-    padding: 0 20px;  /* fractional slides পাশে দেখা যাবে */
+    padding: 0 20px;
+    /* fractional slides পাশে দেখা যাবে */
     box-sizing: border-box;
 }
 
@@ -484,101 +489,349 @@ margin: 0 auto;
 
 
 /* short list of available brands start */
-.sortlistof_available_brands{
+.sortlistof_available_brands {
     background: #ffffff;
 }
-.sortlistof_available_brands h1{
-   font-family: Bebas Neue;
-font-weight: 400;
-font-style: Regular;
-font-size: 96px;
-line-height: 100px;
-letter-spacing: 0%;
-text-align: center;
-color: #FF5000;
-text-transform: uppercase;
-margin-bottom: 20px;
+
+.sortlistof_available_brands h1 {
+    font-family: Bebas Neue;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 96px;
+    line-height: 100px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #FF5000;
+    text-transform: uppercase;
+    margin-bottom: 20px;
 }
+
 .scroll-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .scroll-container .infinite-scroll-wrapper {
-	overflow: hidden;
-	width: 100%;
-	position: relative;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
 }
 
 .infinite-scroll-wrapper .infinite-scroll-content {
-	display: flex;
-	flex-direction: row;
-	white-space: nowrap;
-	animation: scroll 100s linear infinite;
-	width: 100%;
-	gap: 40px;
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    animation: scroll 100s linear infinite;
+    width: 100%;
+    gap: 40px;
 }
 
 .infinite-scroll-wrapper .infinite-scroll-items {
-	display: flex;
-	flex-direction: row;
-	flex-shrink: 0;
-	gap: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    gap: 40px;
 }
 
 .infinite-scroll-items .item-wrap {
-	position: relative;
-	width: fit-content;
-	height: fit-content;
-	flex-shrink: 0;
-	overflow: hidden;
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    flex-shrink: 0;
+    overflow: hidden;
 }
 
 .item-wrap img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	transition: transform 0.3s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
 .item-wrap .text {
-	position: absolute;
-	top: 16px;
-	left: 16px;
-	z-index: 10;
-	color: #fff;
-	font-weight: 500;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 10;
+    color: #fff;
+    font-weight: 500;
 }
 
 .item-wrap:hover img {
-	transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 @media (min-width: 1024px) {
-	.infinite-scroll-wrapper:hover .infinite-scroll-content {
-		animation-play-state: paused;
-	}
+    .infinite-scroll-wrapper:hover .infinite-scroll-content {
+        animation-play-state: paused;
+    }
 }
 
 @keyframes scroll {
-	0% {
-		transform: translateX(0);
-	}
-	100% {
-		transform: translateX(-50%);
-	}
-}
-@media (max-width:1200px) {
-   .sortlistof_available_brands h1{
-    font-size: 55px;
-    line-height: 70px;
-   } 
-}
-@media (max-width: 576px) {
-  .sortlistof_available_brands h1 {
-    font-size: 30px;
-    line-height: 38px;
-  }
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
+@media (max-width:1200px) {
+    .sortlistof_available_brands h1 {
+        font-size: 55px;
+        line-height: 70px;
+    }
+}
+
+@media (max-width: 576px) {
+    .sortlistof_available_brands h1 {
+        font-size: 30px;
+        line-height: 38px;
+    }
+}
+
+/* book now  section start */
+.bookNow_area {
+    background: url(../images/cta_section.png) no-repeat 0 0 / 100% 100%;
+    padding-top: 30px;
+}
+
+.bookNow_area h1 {
+    font-family: Bebas Neue;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 150px;
+    line-height: 150px;
+    letter-spacing: 0%;
+    text-align: left;
+    color: #002D71;
+}
+
+.bookNow_area h2 {
+    font-family: Bebas Neue;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 96px;
+    line-height: 100px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #FF5000;
+    max-width: 642px;
+    width: 100%;
+}
+
+.bookNow_area p {
+    font-family: Ibarra Real Nova;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0%;
+    color: #ffffff;
+    text-align: left;
+    max-width: 613px;
+}
+
+.bookNow_area button {
+    margin-top: 121px;
+    font-family: Bebas Neue;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 96px;
+    line-height: 100px;
+    letter-spacing: 0%;
+    color: #ffffff;
+    background: #D34200;
+    border-radius: 20px;
+    padding: 10px 40px;
+}
+
+@media (max-width: 1275px) {
+    .bookNow_area h1 {
+        font-size: 100px;
+        line-height: 100px;
+    }
+
+    .bookNow_area h2 {
+        font-size: 64px;
+        line-height: 64px;
+        max-width: 489px;
+    }
+}
+
+@media (max-width: 992px) {
+    .bookNow_area h1 {
+        font-size: 73px;
+        line-height: 72px;
+    }
+
+    .bookNow_area h2 {
+        font-size: 50px;
+        line-height: 53px;
+        max-width: 340px;
+    }
+
+    .bookNow_area button {
+        margin-top: 68px;
+        font-size: 63px;
+        line-height: 63px;
+    }
+}
+
+@media (max-width: 576px) {
+    .bookNow_area h1 {
+        font-size: 51px;
+        line-height: 52px;
+    }
+
+    .bookNow_area h2 {
+        font-size: 31px;
+        line-height: 34px;
+        max-width: 246px;
+    }
+
+    .bookNow_area p {
+        font-size: 19px;
+        line-height: 27px;
+        max-width: 335px;
+    }
+
+    .bookNow_area button {
+        margin-top: 34px;
+        font-size: 40px;
+        line-height: 44px;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 420px) {
+    .bookNow_area h1 {
+        font-size: 46px;
+        line-height: 44px;
+    }
+
+    .bookNow_area h2 {
+        font-size: 26px;
+        line-height: 29px;
+        max-width: 206px;
+    }
+
+    .bookNow_area button {
+        margin-top: 27px;
+        font-size: 34px;
+        line-height: 36px;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 374px) {
+    .bookNow_area h1 {
+        font-size: 39px;
+        line-height: 34px;
+    }
+
+    .bookNow_area p {
+        font-size: 16px;
+        line-height: 19px;
+        max-width: 335px;
+    }
+
+    .bookNow_area h2 {
+        font-size: 19px;
+        line-height: 29px;
+        max-width: 149px;
+    }
+
+    .bookNow_area button {
+        margin-top: 27px;
+        font-size: 23px;
+        line-height: 27px;
+    }
+}
+
+/* book now  section end */
+
+
+
+/* footer area start */
+.footer_area{
+    background: #1B1D21;
+    background-image: url(../images/footer_bg.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 82px;
+}
+.subscription_area{
+    max-width: 1090px;
+    background: #FDDFDF;
+    border-radius: 10px;
+    padding: 30px;
+}
+.subscription_area h1{
+    font-family: Playfair Display;
+font-weight: 400;
+font-size: 28px;
+line-height: 100%;
+letter-spacing: 0px;
+color: #000000;
+}
+.subscription_area p{
+    font-family: Poppins;
+font-weight: 300;
+font-style: Light;
+font-size: 14px;
+line-height: 100%;
+letter-spacing: 0%;
+color: #000000;
+}
+.subscribeinput{
+    border: 2px solid #97979720;
+    border-radius: 5px;
+
+}
+.subscribeinput input{
+    font-family: Poppins;
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 0px;
+color: #1B1D21;
+background: #ffffff25 !important;
+}
+.subscribeinput button{
+    font-family: Poppins;
+font-weight: 500;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 0px;
+text-align: center;
+text-transform: uppercase;
+color: #ffffff;
+background: #000000;
+border-radius: 5px;
+height: 38px;
+flex-shrink: 0;
+padding: 0 15px;
+}
+@media (max-width: 576px) {
+    .subscribeinput{
+        flex-wrap: wrap;
+        border: none;
+        justify-content: center;
+        row-gap: 20px
+    }
+    .subscribeinput button{
+        margin:0 auto ;
+    }
+    .subscribeinput input{
+         border: 2px solid #97979720 !important;
+    }
+}
+@media (max-width: 376px) {
+ .subscription_area h1{
+    font-size: 21px;
+ }
+}
+/* footer area end */
