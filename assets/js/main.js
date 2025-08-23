@@ -37,20 +37,20 @@ $(document).ready(function () {
 var swiper = new Swiper(".productShowcase", {
     loop: true,
     centeredSlides: true,
-    slidesPerView: 4.5,          // fractional
+    centeredSlidesBounds: true,   // ✅ যোগ করুন
+    slidesPerView: 3.5,
     spaceBetween: 30,
-    loopedSlides: 5,             // >= total slides
-    loopFillGroupWithBlank: true,
     grabCursor: true,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
     breakpoints: {
-        320: { slidesPerView: 1, spaceBetween: 10, loopedSlides: 3 },
-        768: { slidesPerView: 2, spaceBetween: 20, loopedSlides: 4 },
-        1024: { slidesPerView: 3, spaceBetween: 30, loopedSlides: 5 },
-        1440: { slidesPerView: 4.5, spaceBetween: 40, loopedSlides: 6 },
+        320: { slidesPerView: 1, spaceBetween: 10 },
+        480: { slidesPerView: 1.5, spaceBetween: 20 },
+        768: { slidesPerView: 2, spaceBetween: 20 },
+        1024: { slidesPerView: 2.5, spaceBetween: 30 },
+        1440: { slidesPerView: 3.5, spaceBetween: 40 },
     },
 });
 
