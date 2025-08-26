@@ -773,7 +773,7 @@ header {
     line-height: 150px;
     letter-spacing: 0%;
     text-align: left;
-    color: #002D71;
+    color: #ffffff;
 }
 
 .bookNow_area h2 {
@@ -869,6 +869,17 @@ header {
             }
 }
 
+@media (max-width: 768px) {
+ .bookNow_area h1{
+    text-align: center;
+ }
+ .bookNow_area h2{
+    text-align: center;
+ }
+ .bookNow_area p{
+    text-align: center;
+ }
+}
 @media (max-width: 576px) {
     .bookNow_area h1 {
         font-size: 51px;
