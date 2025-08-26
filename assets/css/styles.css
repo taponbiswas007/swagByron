@@ -878,6 +878,7 @@ header {
  }
  .bookNow_area p{
     text-align: center;
+    max-width: unset !important;
  }
 }
 @media (max-width: 576px) {
@@ -893,9 +894,9 @@ header {
     }
 
     .bookNow_area p {
-        font-size: 19px;
+        /* font-size: 19px;
         line-height: 27px;
-        max-width: 335px;
+        max-width: 335px; */
     }
 
     .bookNow_area button {
