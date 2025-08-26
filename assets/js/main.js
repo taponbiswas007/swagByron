@@ -126,3 +126,12 @@ const debounce = (func, delay) => {
 
 window.addEventListener("load", () => core(window.innerWidth));
 window.addEventListener("resize", debounce(() => core(window.innerWidth), 300));
+
+// === Infinite Scroll Duplicate Fix ===
+document.querySelectorAll('.infinite-scroll-wrapper').forEach(wrapper => {
+    const content = wrapper.querySelector('.infinite-scroll-content');
+    const items = content.querySelector('.infinite-scroll-items');
+
+    const clone = items.cloneNode(true);
+    content.appendChild(clone);
+});

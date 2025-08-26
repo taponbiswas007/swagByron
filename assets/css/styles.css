@@ -694,8 +694,6 @@ header {
 
 .infinite-scroll-items .item-wrap {
     position: relative;
-    /* width: fit-content;
-    height: fit-content; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -705,8 +703,6 @@ header {
 
 .item-wrap {
     position: relative;
-    /* width: fit-content;
-    height: fit-content; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -765,7 +761,7 @@ header {
 
 /* book now  section start */
 .bookNow_area {
-    background: url(../images/cta_section.png) no-repeat 0 0 / 100% 100%;
+      background: linear-gradient(to right, #000000 0%, #111111 75%, #FF5000 100%);
     padding-top: 30px;
 }
 
@@ -863,6 +859,14 @@ header {
     .bookNow_area p {
         margin-top: 30px;
     }
+     .owner_imagebox {
+                padding: 30px;
+            }
+            
+            .image-wrapper {
+                width: 220px;
+                height: 220px;
+            }
 }
 
 @media (max-width: 576px) {
