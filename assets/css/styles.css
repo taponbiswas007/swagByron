@@ -407,11 +407,13 @@ header {
     letter-spacing: 0%;
     color: #002D71;
 }
-.hero_ownerimage{
+
+.hero_ownerimage {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .owner_imagebox {
     flex: 0 0 45%;
     display: flex;
@@ -761,7 +763,7 @@ header {
 
 /* book now  section start */
 .bookNow_area {
-      background: linear-gradient(to right, #000000 0%, #111111 75%, #FF5000 100%);
+    background: linear-gradient(to right, #000000 0%, #111111 75%, #FF5000 100%);
     padding-top: 30px;
 }
 
@@ -802,7 +804,7 @@ header {
     margin-top: 100px;
 }
 
-.bookNow_area button {
+.bookNow_area .bookNowBtn {
     margin-top: 121px;
     font-family: Bebas Neue;
     font-weight: 400;
@@ -815,9 +817,10 @@ header {
     border-radius: 20px;
     padding: 10px 40px;
     transition: all 0.3s ease;
+    width: fit-content;
 }
 
-.bookNow_area button:hover {
+.bookNow_area .bookNowBtn:hover {
     background: #FEC00F;
 }
 
@@ -850,7 +853,7 @@ header {
         max-width: 340px;
     }
 
-    .bookNow_area button {
+    .bookNow_area .bookNowBtn {
         margin-top: 68px;
         font-size: 63px;
         line-height: 63px;
@@ -859,28 +862,32 @@ header {
     .bookNow_area p {
         margin-top: 30px;
     }
-     .owner_imagebox {
-                padding: 30px;
-            }
-            
-            .image-wrapper {
-                width: 220px;
-                height: 220px;
-            }
+
+    .owner_imagebox {
+        padding: 30px;
+    }
+
+    .image-wrapper {
+        width: 220px;
+        height: 220px;
+    }
 }
 
 @media (max-width: 768px) {
- .bookNow_area h1{
-    text-align: center;
- }
- .bookNow_area h2{
-    text-align: center;
- }
- .bookNow_area p{
-    text-align: center;
-    max-width: unset !important;
- }
+    .bookNow_area h1 {
+        text-align: center;
+    }
+
+    .bookNow_area h2 {
+        text-align: center;
+    }
+
+    .bookNow_area p {
+        text-align: center;
+        max-width: unset !important;
+    }
 }
+
 @media (max-width: 576px) {
     .bookNow_area h1 {
         font-size: 51px;
@@ -899,7 +906,7 @@ header {
         max-width: 335px; */
     }
 
-    .bookNow_area button {
+    .bookNow_area .bookNowBtn {
         margin-top: 34px;
         font-size: 40px;
         line-height: 44px;
@@ -919,7 +926,7 @@ header {
         max-width: 206px;
     }
 
-    .bookNow_area button {
+    .bookNow_area .bookNowBtn {
         margin-top: 27px;
         font-size: 34px;
         line-height: 36px;
@@ -945,7 +952,7 @@ header {
         max-width: 149px;
     }
 
-    .bookNow_area button {
+    .bookNow_area .bookNowBtn {
         margin-top: 27px;
         font-size: 23px;
         line-height: 27px;
